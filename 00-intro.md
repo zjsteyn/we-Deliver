@@ -3,9 +3,11 @@ layout: lesson
 title: Using spreadsheet programs for scientific data
 root: .
 ---
+Authors: **Juan Steyn**, **Anelda van der Walt**<br>
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
-Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, **Clare Sloggett**, **Harriet Dashnow** and
+Original Data Carpentry Lesson: [Ecology - Data Organisation in Spreadsheets](http://www.datacarpentry.org/spreadsheet-ecology-lesson/)
+Original Data Carpentry Lesson Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+Original Data Carpentry Lesson Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, **Clare Sloggett**, **Harriet Dashnow** and
 **Ben Marwick**
 
 Good **data organization** is the foundation of your research
