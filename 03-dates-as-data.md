@@ -4,8 +4,11 @@ title: Dates as data
 root: .
 ---
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
-Contributors: **Jennifer Bryan**, **Angel Corpuz**, **Alexander Duryee**,
+Authors: **Juan Steyn**, **Anelda van der Walt**<br>
+
+Original Data Carpentry Lesson: [Ecology - Data Organisation in Spreadsheets](http://www.datacarpentry.org/spreadsheet-ecology-lesson/)
+Original Data Carpentry Lesson Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+Original Data Carpentry Lesson Contributors: **Jennifer Bryan**, **Angel Corpuz**, **Alexander Duryee**,
 **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and **Ben Marwick**
 
 ## Learning Objectives 
@@ -31,7 +34,7 @@ Let's try with a simple challenge.
 
 #### Challenge: pulling month, day and year out of dates ####
 
-- In the `dates` tab of your Excel file you have the data from 2014 plot 3. There's a `Date collected` column.
+- In the `Data Collector Assistant 1` tab of your Excel file you have the data from Tweets collected in September 2014. There's a `Date created` column.
 - Let’s extract month and year from the dates to new columns. For this we can use the built in Excel functions
 
 ```
