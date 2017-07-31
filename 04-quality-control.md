@@ -95,16 +95,15 @@ right option from the list.
 **Bad values often sort to bottom or top of the column**. For example, if your data should be numeric, then alphabetical and null data will group at the ends of the sorted data. Sort your data by each field, one at a time. Scan through each column, but pay the most attention to the top and the bottom of a column. 
 If your dataset is well-structured and does not contain formulas, sorting should never affect the integrity of your dataset.
 
-Let's try this with the *1980* tab in our messy spreadsheet. Go to that tab. Select
-**Data** then select **Sort**
+We created a semi-cleaned up version of our data. You can download it [here](data/digital_humanities/Twitter_sorting_cleaning.xlsx). 
+Let's sort this dataset on the `user_lang` column by selecting your dataset and going to the **Data** and **Sort** menus at the top of your screen
 
-Sort by *wgt* in the order *Smallest to Largest*
+Sort by *user_lang* in the *ascending order*.
 
-![Figure of Sorting menu](fig/sorting.png)
+![Figure of Sorting menu](fig/04-qc-sorting-error.png)
 
 - When you do this sort, do you notice anything strange?
 
-- Try sorting by *species*. Anything strange there?
 
 
 ## Conditional formatting ##
@@ -113,11 +112,14 @@ Use with caution! But a great way to flag inconsistent values when entering data
 Conditional formatting basically can do something like color code your values by some
 criteria or lowest to highest. This makes it easy to scan your data for outliers.
 
-Let's try this again with weight. Go to **Format** then **Conditional Formatting**.
+Let's try this again with the column `created_at`. Go to **Format** then **Conditional Formatting**.
 
-We'll do the *2-Color Scale* with Lowest to Highest for the orange colors. Then we'll 
-apply that to the *wgt* column again. Now we can scan through and different colors will
-stand out. Again, do we notice any strange values?
+We'll do the *2-Color Scale* applied to `created_at`. Now we can scan through and different colors will
+stand out. You can also use this in combination with sort to see if anything stands out now that the human eye might have
+missed before. Again, do we notice any strange values?
+
+
+![Figure of Conditional formatting](fig/04-qc-conditional-formatting.png)
 
 It is nice to do be able to do these scans in spreadsheets, but we also can do these
 checks in a programming language like R, or in OpenRefine or SQL. 
