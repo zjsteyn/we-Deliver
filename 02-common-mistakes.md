@@ -4,8 +4,11 @@ title: Formatting problems
 root: .
 ---
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
-Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and **Ben Marwick**
+Authors: **Juan Steyn**, **Anelda van der Walt**<br>
+
+Original Data Carpentry Lesson: [Ecology - Data Organisation in Spreadsheets](http://www.datacarpentry.org/spreadsheet-ecology-lesson/)
+Original Data Carpentry Lesson Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+Original Data Carpentry Lesson Contributors: **Jennifer Bryan**, **Alexander Duryee**, **Jeffrey Hollister**, **Daisie Huang**, **Owen Jones**, and **Ben Marwick**
 
 ## Learning Objectives
 * Recognize and resolve common spreadsheet formatting problems.
@@ -37,13 +40,13 @@ which sees each row as an observation. You’re also potentially using the same
 field name in multiple places, which will make it harder to clean your data up
 into a usable form. The example below depicts the problem:
 
-![multiple tabs](fig/2_datasheet_example.jpg)
+![multiple tabs](fig/02-common-mistakes-multiple-tables.png)
 
 
 
 ## <a name=tabs></a> Multiple tabs
 
-But what about worksheet tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there (you have to introduce spreadsheet application-specific functions or scripting to ensure this connection). Say, for instance, you make a separate tab for each day you take a measurement.
+But what about worksheet tabs? That seems like an easy way to organize data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there (you have to introduce spreadsheet application-specific functions or scripting to ensure this connection). Say, for instance, you make a separate tab for each day you collect data.
 
 This is bad practice for two reasons:
 **1)** you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and
@@ -83,11 +86,11 @@ From White et al, 2013, [Nine simple ways to make it easier to (re)use your data
 
 **Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
 
-![formatting](fig/formatting.png)
+![formatting](fig/02-common-mistakes-colour-information.png)
 
 **Solution**: create a new field to encode which data should be excluded.
 
-![good formatting](fig/good_formatting.png)
+![good formatting](fig/02-common-mistakes-additional-column.png)
 
 
 ## <a name="formatting_pretty"></a> Using formatting to make the data sheet look pretty
