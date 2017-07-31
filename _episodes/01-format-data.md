@@ -13,7 +13,8 @@ keypoints:
 - "Organize your data according to tidy data principles."  
 ---
 
-Authors: **Christie Bahlai**, **Aleksandra Pawlik**<br>
+DH Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
+Original Authors: **Christie Bahlai**, **Aleksandra Pawlik**<br>
 
 The most common mistake made is treating treating spreadsheet programs like lab notebooks, that is, 
 relying on context, notes in the margin,
@@ -60,7 +61,7 @@ with your notes. This way the notes and data stay together.
 
 This might be an example of a spreadsheet setup:
 
-![spreadsheet setup](../fig/spreadsheet-setup.png)
+![spreadsheet setup](../fig/01-format-keeping-notes.png)
 
 Put these principles in to practice today during your Exercises. 
 
@@ -70,8 +71,8 @@ Put these principles in to practice today during your Exercises.
 
 The cardinal rules of using spreadsheet programs for data:
 
-1. Put all your variables in columns - the thing you're measuring,
-   like 'weight' or 'temperature'.
+1. Put all your variables in columns - the thing you're measuring or that describes your individual
+   like 'number_of_twitter_followers' or 'date_collected'.
 2. Put each observation in its own row.
 3. Don't combine multiple pieces of information in one
    cell. Sometimes it just seems like one thing, but think if that's
@@ -81,19 +82,16 @@ The cardinal rules of using spreadsheet programs for data:
    ensures that anyone can use the data, and is required by
    most data repositories.
 
-For instance, we have data from a survey of small mammals in a desert
-ecosystem. Different people have gone to the field and entered data in
-to a spreadsheet. They keep track of things like species, plot,
-weight, sex and date collected.
+For instance, we have data collected from Twitter over different time periods downloaded by different 
+student assistants. Each of them collected the data in a slightly different way. 
 
-If they were to keep track of the data like this:
+One of the collected datasets looks like this:
 
-![multiple-info example](../fig/multiple-info.png)
+![multiple-info example](../fig/01-format-multiple-values.png)
 
-the problem is that species and sex are in the same field. So, if they wanted to 
-look at all of one species or look at different weight distributions by sex, 
-it would be hard to do this using this data setup. If instead we put sex and species 
-in different columns, you can see that it would be much easier. 
+The problem here is that the handle field also includes the language of the Tweet. So, if we wanted to 
+look at the number of languages that were represented in Tweets with the #digitalhumanities hashtag in our dataset, 
+it would be hard to extract that information from the spreadsheet in the way that it is currently set up. If instead we created separate columns for the handle and the language of the Tweet, you can see that it would be much easier.  
 
 ### Columns for variables and rows for observations
 
@@ -102,28 +100,25 @@ variables, rows = observations, cells = data (values).
 
 So, instead we should have:
 
-![single-info example](../fig/single-info.png)
+![single-info example](../fig/01-format-clean-data.png)
 
 > ## Discussion
 > If not already discussed, introduce the dataset that will be used in this
-> lesson, and in the other ecology lessons, the [Portal Project Teaching Dataset](http://www.datacarpentry.org/ecology-workshop/data/). 
+> lesson, and in the other digital humanities lessons, the [Summer of #digitalhumanities Twitter data](../Setup). 
 >
-> The data used in the ecology lessons are observations of a small mammal community in southern Arizona. This is part of a project studying the effects of rodents and ants on the plant community that has been running for almost 40 years. The rodents are sampled on a series of 24 plots, with different experimental manipulations controlling which rodents are allowed to access which plots.
-> 
-> This is a real dataset that has been used in over 100 publications. We’ve simplified it just a little bit for the workshop, but you can download the full dataset and work with it using exactly the same tools we’ll learn about today.  
+> This is a real dataset that has been published on Figshare. We’ve simplified it just a little bit for the workshop, but you can download the full dataset and work with it using exactly the same tools we’ll learn about today.  
 {: .discussion}
 
 
 > ## Exercise
 > 
-> We're going to take a messy version of the survey data and describe how we would clean it up.
+> We're going to take a messy version of the Twitter data and describe how we would clean it up.
 >
-> 1. Download the data by clicking [here](https://ndownloader.figshare.com/files/2252083) to get it from FigShare.
+> 1. Download the data by clicking [here](../data/survey_data_spreadsheet_messy.xls) to get it from our repository.
 > 2. Open up the data in a spreadsheet program. 
-> 3. You can see that there are two tabs. Two field assistants conducted the surveys, one
-in 2013 and one in 2014, and they both kept track of the data in their own way. Now
-you're the person in charge of this project and you want to be able to 
-start analyzing the data.   
+> 3. You can see that there are five tabs. The first tab is a "ReadMe" which you will learn about at the end of the [next episode](02-common-mistakes.md). It describes the data in this document. The second and third tabs were individually collected by our two imaginary student assistants. They both collected the data in their own way. The fourth tab has been created for you to create a copy of the cleaned up data. The fifth tab is where you can keep notes of what you did to clean the data up. 
+> Now you're the person in charge of this project and you want to be able to 
+> start analyzing the data.   
 > 4. With the person next to you, identify what is wrong with this spreadsheet. Also discuss the steps you would need to take to clean up the 2013 and 2014 tabs, and to put them all together in one spreadsheet. 
 >
 > **Important** Do not forget our first piece of advice, the
