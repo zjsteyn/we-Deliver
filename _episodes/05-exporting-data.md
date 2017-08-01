@@ -12,7 +12,8 @@ keypoints:
 - "Exporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs."
 ---
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+DH Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
+Original Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 
 Storing the data you're going to work with for your analyses in Excel
 default file format (`*.xls` or `*.xlsx` - depending on the Excel
@@ -60,7 +61,7 @@ To save a file you have opened in Excel in CSV format:
 
 An important note for backwards compatibility: you can open CSV files in Excel!
 
-![Saving an Excel file to CSV](../fig/excel-to-csv.png)
+![Saving an Excel file to CSV](../fig/05-export-csv.png)
 
 ## A Note on Cross-platform Operability
 
