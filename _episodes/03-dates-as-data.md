@@ -12,7 +12,8 @@ keypoints:
 - "Treating dates as multiple pieces of data rather than one makes them easier to handle."
 ---
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+DH Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
+Original Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 
 Dates in spreadsheets are stored in a single column. While this seems the
 most natural way to record dates, it actually is not best
@@ -30,8 +31,7 @@ conserve the timestamps, you are better off handling them using one of the solut
 >
 > Challenge: pulling month, day and year out of dates 
 >
-> - In the `dates` tab of your spreadsheet you have the data from 2014 plot 3. 
-> There's a `Date collected` column.
+> - In the `Data Collector Assistant 1` tab of your Excel file you have the data from Tweets collected in September 2014. There's a `Date created` column.
 > - Let’s extract month, day and year from the dates to new columns. For this we 
 > can use the built in Excel functions
 >
@@ -42,10 +42,10 @@ conserve the timestamps, you are better off handling them using one of the solut
 > (Make sure the new column is formatted as a number and not as a date.)
 >
 > You can see that even though you wanted the year to be 2014, your spreadsheet program
-> automatically interpreted it as 2015, the year you entered the data.
+> automatically interpreted it as 2017, the year you entered the data.
 >
 > > ## Solution
-> > ![dates, exersize 1](../fig/solution_exercise_1_dates.png)
+> > ![dates, exersize 1](../fig/03-dates-separate-columns.png)
 > > {: .output}
 > {: .solution}
 {: .challenge}
@@ -138,7 +138,7 @@ fully aware of which format you’re using, you can end up actually entering you
 > > - Select `File -> Save As` in Excel and in the drop down menu for file format select `CSV UTF-8 (Comma delimited) (.csv)`. Click `Save`.  
 > > - You will see a pop-up that says "This workbook cannot be saved in the selected file format because it contains multiple sheets." Choose `Save Active Sheet`.   
 > > - Navigate to the file in your finder application. Right click and select `Open With`. Choose a plain text editor application and view the file. Notice that the dates display as month/day without any year information.   
-> > - Now right click on the file again and open with Excel. Notice that the dates display with the current year, not 2015.   
+> > - Now right click on the file again and open with Excel. Notice that the dates display with the current year, not 2017.   
 > > As you can see, exporting data from Excel and then importing it back into Excel fundamentally changed the data!  
 > {: .solution}
 {: .challenge}
@@ -152,11 +152,11 @@ You will notice that when exporting into a text-based format (such as CSV), Exce
 
 Storing dates in YEAR, MONTH, DAY format helps remove this ambiguity. Let's look at this issue a bit closer.
 
-For instance this is a spreadsheet representing insect counts that were taken every few days over the summer, and things went something like this:
+For instance this is a spreadsheet representing information about research interviews that were carried out on different days during the data collection stage of a project that ran in 2014, and things went something like this:
 
 ![So, so ambiguous, it's even confusing Excel](../fig/6_excel_dates_2.jpg)
 
-If Excel was to be believed, this person had been collecting bugs **in the future**. Now, we have no doubt this person is highly capable,
+If Excel was to be believed, this person had been doing interviews since 2010 and even **in the future**. Now, we have no doubt this person is highly capable,
 but I believe time travel was beyond even their grasp.
 
 Entering dates in one cell is helpful but due to the fact that the spreadsheet programs may interpret and save the data in different ways
