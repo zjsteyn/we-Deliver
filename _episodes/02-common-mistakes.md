@@ -20,7 +20,8 @@ keypoints:
 - "Record metadata in a separate plain text file."
 ---
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+DH Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
+Original Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 
 ## Common Spreadsheet Errors
 
@@ -53,12 +54,12 @@ which sees each row as an observation. You’re also potentially using the same
 field name in multiple places, which will make it harder to clean your data up
 into a usable form. The example below depicts the problem:
 
-![multiple tabs](../fig/2_datasheet_example.jpg)
+![multiple tabs](../fig/02-common-mistakes-multiple-tables.png)
 
-In the example above, the computer will see (for example) row 4 and assume that all columns A-AF 
-refer to the same sample. This row actually represents four distinct samples 
-(sample 1 for each of four different collection dates - May 29th, June 12th, June 19th, and June 26th), 
-as well as some calculated summary statistics (an average (avr) and standard error of measurement (SEM)) for two of those samples. Other rows are similarly problematic.
+In the example above, the computer will see (for example) row 7 and assume that all columns C-M 
+refer to the same sample. This row actually represents two distinct Tweets 
+(one by userhandle 'ChatauJulie' and another by 'wragge') with their associated dates of creation, text, 
+etc. Having multiple tables stacked down the length of the spreadsheet will be similarly problematic.
 
 ## <a name="tabs"></a> Using multiple tabs
 
@@ -67,7 +68,7 @@ to allow the computer to see connections in the data that are there (you have to
 scripting to ensure this connection). Say, for instance, you make a separate tab for each day you take a measurement.
 
 This isn't good practice for two reasons:
-1) you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and
+1) you are more likely to accidentally add inconsistencies to your data if each time you take capture a data point, you start recording data in a new tab, and
 2) even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyze the
 data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer how to combine
 tabs - and if the tabs are inconsistently formatted, you might even have to do it manually.
@@ -115,11 +116,11 @@ Blanks (most applications) and NA (for R) are good choices. White et al, 2013, e
 
 **Example**: highlighting cells, rows or columns that should be excluded from an analysis, leaving blank rows to indicate separations in data.
 
-![formatting](../fig/formatting.png)
+![formatting](../fig/02-common-mistakes-colour-information.png)
 
 **Solution**: create a new field to encode which data should be excluded.
 
-![good formatting](../fig/good_formatting.png)
+![good formatting](../fig/02-common-mistakes-additional-column.png)
 
 
 ## <a name="formatting_pretty"></a> Using formatting to make the data sheet look pretty
@@ -133,22 +134,21 @@ such a way that you will not need to merge cells to organize your data.
 
 ## <a name="units"></a> Placing comments or units in cells
 
-**Example**: Your data was collected, in part, by a summer student who you later found out was mis-identifying some of your species, some
+**Example**: Your data was collected, in part, by a student assistant who you later found out was copying and pasting incorrectly and not all the dates are necessarily captured correctly. Some of your dates are incorrectly associated with a Tweet, some
 of the time. You want a way to note these data are suspect.
 
 **Solution**: Most analysis software can't see Excel or LibreOffice comments, and would be confused by comments placed within your data
-cells. As described above for formatting, create another field if you need to add notes to cells. Similarly, don’t include units in
-cells: ideally, all the measurements you place in one column should be in the same unit, but if for some reason they aren’t, create
+cells. As described above for formatting, create another field if you need to add notes to cells. Similarly, don’t include units of measurement or other descriptive text in
+cells that supposedly contain numeric data that will later be used in calculations: ideally, all the data in one column (for example measurements) should be in the same unit, but if for some reason they aren’t, create
 another field and specify the units the cell is in.
 
 
 ## <a name="info"></a> Entering more than one piece of information in a cell
 
-**Example**: You find one male, and one female of the same species. You enter this as 1M, 1F.
+**Example**: We previously saw that the student assistant captured the Twitter handle as well as the language of the Tweet in a single column.
 
 **Solution**: Don't include more than one piece of information in a cell. This will limit the ways in which you can analyze your data. 
-If you need both these measurements, design your data sheet to include this information. For example, include one column for number of
-individuals and a separate column for sex.
+If you need both these measurements, design your data sheet to include this information. For example, include one column for the Twitter handle and a separate column for the Tweet language.
 
 ## <a name="field_name"></a> Using problematic field names
 Choose descriptive field names, but be careful not to include spaces, numbers, or special characters of any kind. Spaces can be
