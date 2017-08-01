@@ -6,7 +6,7 @@ permalink: /setup/
 
 > ## Data
 
-> **Download** this data file to your computer: [Messy data](data/digital_humanities/ASummerofdigitalhumanitiesATwitterArchive_messy.xlsx) 
+> **Download** this data file to your computer: [Messy data](../data/digital_humanities/ASummerofdigitalhumanitiesATwitterArchive_messy.xlsx) 
 
 > #### About the data
 > The data for this lesson is a part of a draft Data Carpentry Digital Humanities workshop. 
