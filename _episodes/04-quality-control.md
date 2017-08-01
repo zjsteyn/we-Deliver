@@ -13,7 +13,8 @@ keypoints:
 - "Use conditional formatting (cautiously) to check for invalid data."
 ---
 
-Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
+DH Modifications: **Anelda van der Walt**, **Juan Steyn** <br>
+Original Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 
 When you have a well-structured data table, you can use several simple
 techniques within your spreadsheet to ensure the data you enter is
@@ -39,51 +40,47 @@ in each data column.
 
 2\. On the `Data` tab select `Data Validation`
 
-![Image of Data Validation button on Data tab](../fig/data_validation.png)
+![Image of Data Validation button on Data tab](../fig/04-qc-validation-01.png)
 
 3\. In the `Allow` box select the kind of data that should be in the
    column. Options include whole numbers, decimals, lists of items, dates, and
    other values.
 
-![Image of Data Validation window](../fig/data_validation_window.png)
+![Image of Data Validation window](../fig/04-qc-validation-02.png)
    
 4\. After selecting an item enter any additional details. For example, if you've
    chosen a list of values, enter a comma-delimited list of allowable
    values in the `Source` box.
 
-Let's try this out by setting the plot column in our spreadsheet to only allow
-plot values that are integers between 1 and 24.
+Let's try this out by setting the `Date of Creation` column in our spreadsheet to only allow
+date values that are between 1 June 2014 and 15 September 2014.
 
-1. Select the `plot_id` column
+1. Select the `Date of Creation` column
 2. On the `Data` tab select `Data Validation`
-3. In the `Allow` box select `Whole number`
-4. Set the minimum and maximum values to 1 and 24.
+3. In the `Allow` box select `Date`
+4. Set the minimum and maximum values to 2014-06-01 and 2014-09-15.
 
-![Image of Data Validation window for validating plot values](../fig/plot_validation.png)
+![Image of Data Validation window for validating plot values](../fig/04-qc-validation-03.png)
 
 Now let's try entering a new value in the plot column that isn't a valid
 plot. The spreadsheet stops us from entering the wrong value and asks us if we
 would like to try again.
 
-![Image of error when trying to enter invalid data](../fig/invalid_value.png)
+![Image of error when trying to enter invalid data](../fig/04-qc-validation-04.png)
 
 You can also customize the resulting message to be more informative by entering
 your own message in the `Input Message` tab
 
-![Image of Input Message tab](../fig/input_message.png)
-
 or allow invalid data to result in a warning rather than an error by modifying the `Style`
 option on the `Error Alert` tab.
-
-![Image of Error Alert tab](../fig/error_alert.png)
 
 Quality assurance can make data entry easier as well as more robust. For
 example, if you use a list of options to restrict data entry, the spreadsheet
 will provide you with a drop-downlist of the available items. So, instead of
-trying to remember how to spell *Dipodomys spectabilis*, you can select the
+trying to type out, for example, the hashtag found in each Tweet, you can select the
 right option from the list.
 
-![Image of drop-down menu](../fig/drop_down_list.png)
+![Image of drop-down menu](../fig/04-validation-list.png)
 
 # Quality Control
 
@@ -110,9 +107,9 @@ If your dataset is well-structured and does not contain formulas, sorting should
 
 > ## Exercise   
 >
-> We've combined all of the tables from the messy data into a single table in a single tab. Download this semi-cleaned data file to your computer: [survey_sorting_exercise](https://figshare.com/articles/survey_data_messy_quality_control/4830016)
+> We've combined all of the tables from the messy data into a single table in a single tab. Download this semi-cleaned data file to your computer: [survey_sorting_exercise](data/digital-humanities/Twitter_sorting_cleaning.xlsx)
 >
-> Once downloaded, sort the `Weight_grams` column in your spreadsheet program from `Largest to Smallest`. 
+> Once downloaded, sort the `user_lang` column in your spreadsheet program in `Ascending` order. 
 >
 > What do you notice?
 >
@@ -120,23 +117,21 @@ If your dataset is well-structured and does not contain formulas, sorting should
 > > 
 > > Click the Sort button on the data tab in Excel. A pop-up will appear. Make sure you select `Expand the selection`.
 > >
-> > ![quality_control0, exercise1](../fig/sorting_button.png)
+> > ![quality_control0, exercise1](../fig/04-qc-sorting-expand-selection.png)
 > > {: .output}
 > >
 > > The following window will display, choose the column you want to sort as well as the sort order.
 > >
-> > ![quality_control1, exercise1](../fig/sorting_example.png)
+> > ![quality_control1, exercise1](../fig/04-qc-sorting-options.png)
 > > {: .output}
 > > 
 > > 
 > > **Note** how the odd values sort to the top and bottom of the tabular data. 
-> > The cells containing no data values sort to the bottom of the tabular data, while the cells where the letter "g" was included can be found towards the top. This is a powerful way to check your data for outliers and odd values.
+> > The cells containing no data values will sort to the bottom of the tabular data. If you were sorting a column that theoretically should contain only numerical data, but in reality includes text such as 79g to indicate 79 grams, these cells will sort to the top. In our case you can see that some of the user languages that were captured shows the full language in stead of the [two-letter ISO code](http://www.science.co.il/language/Codes.php). This is a powerful way to check your data for outliers and odd values.
 > > 
-> > ![quality_control2, exercise1](../fig/sorting_solution_1.png)
+> > ![quality_control2, exercise1](../fig/04-qc-sorting.png)
 > > {: .output}
-> >
-> > ![quality_control3, exercise1](../fig/sorting_solution_2.png)
-> > {: .output}
+
 > > 
 > {: .solution}
 {: .challenge}
@@ -151,13 +146,16 @@ Conditional formatting should be used with caution, but it can be a great way to
 
 > ## Exercise
 > 1. In the main Excel menu bar, click `Format` > `Conditional Formating...` Click the `+` to add a formatting rule.
-> 2. Apply a `2-Color Scale` formatting rule with the lowest values set to orange and the highest values set to yellow.
-> 3. Now we can scan through and different colors will stand out. Do you notice any strange values?
+> 2. We're going to try this again with the column `created_at`. 
+> 3. Apply the *2-Color Scale* to `created_at`. N
+> 4. Now we can scan through and different colors will stand out. You can also use this in combination with `sort` to see if anything stands out now that the human eye might have
+missed before. Again, do we notice any strange values?
+
 > 
 > > ## Solution
 > > 
-> > Cells that contain non-numerical values are not colored. This includes both the cells where the letter "g" was included and the empty cells. 
-> > ![quality_control4, exercise2](../fig/conditional_formating.png)
+> > Dates that are different from 2014 will colour differently. There was a data entry problem which our eye might have previously missed.
+> > ![quality_control4, exercise2]!(fig/04-qc-conditional-formatting.png)
 > > {: .output}
 > > 
 > {: .solution}
