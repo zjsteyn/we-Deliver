@@ -155,7 +155,8 @@ missed before. Again, do we notice any strange values?
 > > ## Solution
 > > 
 > > Dates that are different from 2014 will colour differently. There was a data entry problem which our eye might have previously missed.
-> > ![quality_control4, exercise2]!(fig/04-qc-conditional-formatting.png)
+> >
+> > ![quality_control4, exercise2](fig/04-qc-conditional-formatting.png)
 > > {: .output}
 > > 
 > {: .solution}
