@@ -107,7 +107,7 @@ If your dataset is well-structured and does not contain formulas, sorting should
 
 > ## Exercise   
 >
-> We've combined all of the tables from the messy data into a single table in a single tab. Download this semi-cleaned data file to your computer: [survey_sorting_exercise](data/digital-humanities/Twitter_sorting_cleaning.xlsx)
+> We've combined all of the tables from the messy data into a single table in a single tab. Download this semi-cleaned data file to your computer: [survey_sorting_exercise](../data/digital-humanities/Twitter_sorting_cleaning.xlsx)
 >
 > Once downloaded, sort the `user_lang` column in your spreadsheet program in `Ascending` order. 
 >
