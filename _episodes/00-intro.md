@@ -9,7 +9,7 @@ objectives:
 keypoints:
 - "Good data organization is the foundation of any research project."
 ---
-DH Lesson Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
+we-Deliver Lesson Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
 Original Lesson Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>  
 
 Good data organization is the foundation of your research
