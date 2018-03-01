@@ -13,7 +13,7 @@ keypoints:
 - "Organize your data according to tidy data principles."  
 ---
 
-DH Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
+we-Deliver Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
 Original Authors: **Christie Bahlai**, **Aleksandra Pawlik**<br>
 
 The most common mistake made is treating treating spreadsheet programs like lab notebooks, that is, 
