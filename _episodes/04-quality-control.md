@@ -13,7 +13,7 @@ keypoints:
 - "Use conditional formatting (cautiously) to check for invalid data."
 ---
 
-DH Modifications: **Anelda van der Walt**, **Juan Steyn** <br>
+we-Deliver Modifications: **Anelda van der Walt**, **Juan Steyn** <br>
 Original Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 
 When you have a well-structured data table, you can use several simple
