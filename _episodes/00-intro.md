@@ -124,7 +124,7 @@ your primary spreadsheet program - there are others (gnumeric, Calc
 from OpenOffice), and their functionality is similar, but Excel seems
 to be the program most used by biologists and ecologists.
 
-In this lesson we're going to talk about:
+In this lesson we're going to touch on the following topics:
 
 1. [Formatting data tables in spreadsheets](../01-format-data/)
 2. [Formatting problems](../02-common-mistakes/)
