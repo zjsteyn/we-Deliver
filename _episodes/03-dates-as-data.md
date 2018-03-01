@@ -12,7 +12,7 @@ keypoints:
 - "Treating dates as multiple pieces of data rather than one makes them easier to handle."
 ---
 
-DH Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
+we-Deliver  Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
 Original Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 
 Dates in spreadsheets are stored in a single column. While this seems the
