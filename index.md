@@ -7,6 +7,10 @@ Good data organization is the foundation of any research project. Most
 researchers have data in spreadsheets, so it's the place that many research
 projects start. 
 
+If we take data generated and worked with in the context of the we-Deliver project we also make use of a lot of data that is typically displayed in a spreadsheet format.
+
+For instance the survey data gathered during the site visits is basically a big spreadsheet as well.
+
 We organize data in spreadsheets in the ways that we as humans want to work with the data, 
 but computers require that data be organized in particular ways. In order
 to use tools that make computation more efficient, such as programming 
@@ -14,7 +18,7 @@ languages like R or Python, we need to structure our data the way that
 computers need the data. Since this is where most research projects start, 
 this is where we want to start too!
 
-In this lesson, you will learn:
+In this lesson, we will explore the following together:
 
 - Good data entry practices - formatting data tables in spreadsheets
 - How to avoid common formatting mistakes
@@ -22,16 +26,18 @@ In this lesson, you will learn:
 - Basic quality control and data manipulation in spreadsheets
 - Exporting data from spreadsheets
 
-Much of your time as a researcher will be spent in this 'data wrangling' 
+When working with data much of your time can bes be spent in this 'data wrangling' 
 stage. It's not the most fun, but it is necessary. In this lesson you will 
 learn how to think about data organization and some practices for more 
 effective data wrangling. With this approach you can better format current data
 and plan new data collection so less data wrangling is needed.
 
+We also want to think about how these concepts applies to our day-to-day work and processes.
+
 
 > ## Getting Started
 >
-> Data Carpentry's teaching is hands-on, so participants are encouraged to use
+> This course is based on a Data Carpentry's lesson.  Data Carpentry's teaching is hands-on, so participants are encouraged to use
 > their own computers to insure the proper setup of tools for an efficient 
 > workflow. <br>**These lessons assume no prior knowledge of the skills or tools.**
 >
