@@ -12,7 +12,7 @@ keypoints:
 - "Exporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs."
 ---
 
-DH Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
+we-Deliver Modifications: **Anelda van der Walt**, **Juan Steyn**<br>
 Original Authors:**Christie Bahlai**, **Aleksandra Pawlik**<br>
 
 Storing the data you're going to work with for your analyses in Excel
