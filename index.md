@@ -3,7 +3,7 @@ layout: lesson
 root: .
 ---
 ![alt text](https://we-deliver.github.io/assets/logos/Merged%20Logo.png)
-</br>
+<br>
 Good data organization is the foundation of any research project. Most 
 researchers have data in spreadsheets, so it's the place that many research
 projects start. 
