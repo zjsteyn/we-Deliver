@@ -1,7 +1,7 @@
 ---
 title: "Dates as data"
 teaching: 5
-exercises: 3
+exercises: 0
 questions:
 - "What are good approaches for handling dates in spreadsheets?"
 objectives:
