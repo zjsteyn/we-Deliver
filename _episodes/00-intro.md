@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-teaching: 15
+teaching: 10
 exercises: 3
 questions:
 - "What are basic principles for using spreadsheets for good data organization?"
